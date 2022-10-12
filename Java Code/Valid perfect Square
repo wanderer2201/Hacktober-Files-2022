@@ -1,0 +1,13 @@
+class Solution {
+    public boolean isPerfectSquare(int num) {
+        double r=Math.sqrt(num);
+        boolean b=false;
+     for(int i=1;i<=(int)r;i++)
+     {
+         if(Math.pow(i,2)==num)
+             b=true;
+         
+     }
+        return b;
+    }
+}
