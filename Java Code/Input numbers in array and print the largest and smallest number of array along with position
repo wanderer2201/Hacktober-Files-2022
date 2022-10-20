@@ -1,0 +1,59 @@
+import java.util.*;
+class maxmin
+{
+int arr[];
+int size;
+int max, min,x,y;
+static Scanner sc=new Scanner(System.in);
+public maxmin(int s)
+{
+size=s;
+max=0;
+min=0;
+x=0;
+y=0;
+arr=new int[size];
+}
+public void getdata()
+{
+System.out.println("Enter numbers in array");
+for(int i=0;i<size;i++)
+{
+arr[i]=sc.nextInt();
+}
+}
+
+public void find()
+{
+max=arr[0];
+min=arr[0];
+int i;
+for(i=1;i<size;i++)
+{
+if(arr[i]>max)
+{
+max=arr[i];
+x=i;
+}
+if(arr[i]<min)
+{
+min=arr[i];
+y=i;
+}
+}
+}
+public void display()
+{
+System.out.println("largest number is :"+max+ ”at Position”+x);
+System.out.println("smallest number is : "+min+” at Position “+y);
+}
+public static void main(String args[])
+{
+System.out.println("Eneter the size of array");
+int a=sc.nextInt();
+maxmin obj=new maxmin(a);
+obj.getdata();
+obj.find();
+obj.display();
+}
+}
