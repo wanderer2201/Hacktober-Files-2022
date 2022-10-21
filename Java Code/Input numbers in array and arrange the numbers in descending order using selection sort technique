@@ -1,0 +1,60 @@
+import java.util.*;
+class selection
+{
+int arr[];
+int size;
+static Scanner sc = new Scanner(System.in);
+public selection(int s)
+{
+size=s;
+arr=new int[size];
+}
+public void getdata()
+{
+System.out.println("Enter numbers in array");
+for(int i=0;i<size;i++)
+{
+arr[i]=sc.nextInt();
+}
+}
+public void arrange()
+{
+int i,j,x=0,p,y;
+for(i=0;i<size-1;i++)
+{
+x=arr[i];
+p=i;
+for(j=i+1;j<size;j++)
+{
+if(arr[j]>x)
+{
+x=arr[j];
+p=j;
+}
+y=arr[p];
+
+arr[p]=arr[i];
+arr[i]=y;
+}
+}
+}
+public void display()
+{
+for (int i=0;i<size;i++)
+{
+System.out.println(arr[i]);
+}
+}
+public static void main(String args[])
+{
+System.out.println("Enter the size");
+int a=sc.nextInt();
+selection obj=new selction(a);
+obj.getdata();
+System.out.println("Original numbers are");
+obj.display();
+obj.arrange();
+System.out.println("Numbers is descending order are");
+obj.display();
+}
+}
