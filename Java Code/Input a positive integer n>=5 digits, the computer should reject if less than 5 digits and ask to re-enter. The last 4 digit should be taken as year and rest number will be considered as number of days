@@ -1,0 +1,69 @@
+import java.util.*;
+class Date1
+{
+int d;
+public Date1()
+{
+d=0;
+}
+public boolean inputdate()
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter any date");
+d=sc.nextInt();
+String p=d+"";
+if(p.length()<5)
+return false;
+else
+return true;
+}
+public boolean leap(int y)
+{
+if(y%100!=0&&y%4==0||y%400==0)
+return true;
+else
+return false;
+}
+public void find()
+{
+int i=0;
+int m[]={0,31,28,31,30,31,30,31,31,30,31,30,31};
+
+String
+mon[]={"","JANUARY","FEBRUARY","MARCH","APRIL","MAY","JUNE","JULY","AUGUST","SEPTEMBER","
+OCTOBER","NOVEMBER","DECEMBER"};
+int yy=d%10000;
+boolean c=leap(yy);
+if(c==true)
+m[2]=29;
+int n=d/10000;
+while(n>m[i])
+{
+n=n-m[i];
+i++;
+if(i>12)
+{
+i=0;
+yy++;
+c=leap(yy);
+if(c==true)
+m[2]=29;
+else
+m[2]=28;
+}
+}
+System.out.println("Current date is : "+n+" "+mon[i]+" "+yy);
+}
+public static void main(String args[])
+{
+boolean a;
+Date1 obj=new Date1();
+do
+{
+a=obj.inputdate();
+if(a==false)
+System.out.println("Invalid input! Enter again");
+}while(a==false);
+obj.find();
+}
+}

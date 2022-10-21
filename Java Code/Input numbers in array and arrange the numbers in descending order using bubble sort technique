@@ -1,0 +1,57 @@
+import java.util.*;
+class bubsort
+{
+int arr[];
+int size;
+static Scanner sc = new Scanner(System.in);
+
+public bubsort(int s)
+{
+size=s;
+arr=new int[size];
+}
+public void getdata()
+{
+System.out.println("Enter numbers in array");
+for(int i=0;i<size;i++)
+{
+arr[i]=sc.nextInt();
+}
+}
+public void arrange()
+{
+int i,j,x=0;
+for(i=0;i<size-1;i++)
+{
+for(j=0;j<size-1-i;j++)
+{
+if(arr[j]<arr[j+1])
+{
+x=arr[j];
+arr[j]=arr[j+1];
+arr[j+1]=x;
+}
+}
+}
+}
+public void display()
+{
+for (int i=0;i<size;i++)
+{
+System.out.println(arr[i]);
+}
+}
+
+public static void main(String args[])
+{
+System.out.println("Enter the size");
+int a=sc.nextInt();
+bubsort obj=new bubsort(a);
+obj.getdata();
+System.out.println("Original numbers are");
+obj.display();
+obj.arrange();
+System.out.println("Numbers is descending order are");
+obj.display();
+}
+}

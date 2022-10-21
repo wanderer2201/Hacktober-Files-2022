@@ -1,0 +1,51 @@
+import java.util.*;
+class Sprial
+{
+int arr[][];
+int n;
+static Scanner sc=new Scanner(System.in);
+public Sprial(int rr)
+{
+n=rr;
+arr=new int[n][n];
+}
+public void getdata()
+{
+int i,j,r1=0,r2=n-1,c1=0,c2=n-1;
+int k=1;
+while(k<=n*n)
+{
+for(i=c1;i<=c2;i++)
+arr[r1][i]=k++;
+for(j=r1+1;j<=r2;j++)
+arr[j][c2]=k++;
+for(i=c2-1;i>=c1;i--)
+arr[r2][i]=k++;
+for(j=r2-1;j>=r1+1;j--)
+arr[j][c1]=k++;
+c1++;c2--;r1++;r2--;
+}
+}
+public void arr_display()
+{
+int i,j;
+for(i=0;i<n;i++)
+{
+for(j=0;j<n;j++)
+{
+System.out.print(arr[i][j]+"\t");
+}
+System.out.println();
+}
+}
+
+public static void main(String args[])
+{
+System.out.println("Eneter row and column of array");
+int a=sc.nextInt();
+Sprial obj=new Sprial(a);
+obj.getdata();
+System.out.println("The Matrix is");
+obj.arr_display();
+}
+}
