@@ -1,6 +1,6 @@
 #include<stdio.h>
 // declaring the function
-int fact(int);
+int fact(int);  // function prototyping
 
 int main()
 {
@@ -8,13 +8,13 @@ int main()
     int num, f;
     printf("\n\nEnter a number: ");
     scanf("%d", &num);
-    f= fact(num);
+    f= fact(num); //function calling
     printf("\n\nFactorial of  %d is  %d\n\n", num, f);
     printf("\n\n\t\t\tCoding is Fun !\n\n\n");
     return 0;
 }
 
-int fact(int aj)
+int fact(int aj)  // function defining
 {
     if(aj==1 || aj==0)
         return 1;
