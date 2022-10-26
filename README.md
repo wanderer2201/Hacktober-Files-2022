@@ -1,6 +1,6 @@
 # Hacktober Files 2022
 
-## Attention !! : LAST WEEK of HACKTOBERFEST !!! So all the PRs will be merged till 23:59:59 hours IST of 31st October 2022 , After that the repository will again be active for PRs from 1st October 2023 at 00:00:01 hours IST.
+### Attention !! : LAST WEEK of HACKTOBERFEST !!! So all the PRs will be merged till 23:59:59 hours IST of 31st October 2022 , After that the repository will again be active for PRs from 1st October 2023 at 00:00:01 hours IST.
 
 #### Share the respository as much as possible for as many PRs as possible in the last few days of Hacktoberfest 2022.
 
