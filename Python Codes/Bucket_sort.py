@@ -1,6 +1,6 @@
 # Python program for implementation of Radix Sort
 # A function to do counting sort of arr[] according to
-# the digit represented by exp.
+# the digit represented by  exp.
  
 def countingSort(arr, exp1):
  
