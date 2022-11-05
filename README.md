@@ -2,7 +2,7 @@
 
 ### Attention !! : LAST WEEK of HACKTOBERFEST !!! So all the PRs will be merged till 23:59:59 hours IST of 31st October 2022 , After that the repository will again be active for PRs from 1st October 2023 at 00:00:01 hours IST.
 
-#### Share the respository as much as possible for as many PRs as possible in the last few days of Hacktoberfest 2022.
+#### The Repository is closed for 2022 , will be again active again on 01.10.2023 . Update : 254 PRs closed this season of Hacktoberfest 2022.
 
 #### Just navigate into any language folder of your choice and add your file , do not directly add in the repository.
 

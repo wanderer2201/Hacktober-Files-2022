@@ -1,5 +1,7 @@
 package main
 
+
+
 // GetColumnName converts numeric representation of the column
 // to the letter values as it is used in spreadsheets
 func GetColumnName(n int) string {
